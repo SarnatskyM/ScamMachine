@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+
+  background: rgb(161, 112, 32);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(161, 112, 32, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(161, 112, 32, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(161, 112, 32, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a17020",endColorstr="#fdbb2d",GradientType=1);
+}
+
+.cointainer {
+  max-width: 25rem;
+  max-height: 25rem;
+}
+
+.coin {
+  width: 15rem;
+  height: 15rem;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.coin:hover {
+  transform: translateY(-0.5rem);
+}
+
+.coin:active {
+  transform: translateY(0.5rem);
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}

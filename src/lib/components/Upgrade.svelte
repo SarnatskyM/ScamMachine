@@ -28,8 +28,8 @@
     border: none;
     border-radius: 10px;
     color: white;
-    white-space: nowrap; 
-    overflow: hidden; 
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
     transition:

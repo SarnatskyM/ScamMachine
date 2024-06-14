@@ -1,0 +1,2 @@
+# ScamMachine
+for fun

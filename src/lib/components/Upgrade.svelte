@@ -1,5 +1,7 @@
 <script lang="ts">
   import { startGame } from "$lib/store/store";
+
+  export let isVisible = false;
 </script>
 
 <div class="upgrade">
@@ -11,7 +13,12 @@
     Upgrade (Cost: {$startGame.upgradeCost})
   </button>
 
-  <button class="upgrade-button" on:click disabled={true}> Withdraw </button>
+  <div class="button-list">
+    <button class="upgrade-button" on:click disabled={true}> Withdraw </button>
+    <button class="upgrade-button" on:click={() => (isVisible = !isVisible)}
+      >Shop</button
+    >
+  </div>
 </div>
 
 <style>
